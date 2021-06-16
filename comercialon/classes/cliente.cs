@@ -4,20 +4,17 @@ using System.Collections.Generic;
 namespace comercialon.classes
 {
     public class Cliente // classe publica // projeto de aula - ti89 - comercialon
-    { // declaração de atributo
-        public int Id {get; set;}
-        public string Nome {get; set;}
-        
-        public Cliente() // métodos construtores
-        {}
-        public Cliente(string nome) // nome
+    { // declaração de propriedades
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Cpf { get; set; }
+        public string Email{ get; set; }
+        public string Telefone { get; set; }
+
+
+        public Cliente()
         {
-            Nome = nome;
-        }
-        public Cliente(int id, string nome) // id, nome
-        {
-            Id = id;
-            Nome = nome;
+            Id = 0;
         }
 
         public void Inserir() // métodos da classe // inserir
@@ -26,14 +23,12 @@ namespace comercialon.classes
         {
             return true;
         }
-        public List<Cliente> ListarTodos() // listar todos
+        public List<Cliente> ListarTodos() // listar todos os clientes
         {
-            List<Cliente> lista = new List<Cliente>(); // codigo de listar
-            return lista; // retornar a lista
+            List<Cliente> lista = new List<Cliente>(); // codigo de listar cliente
+            return lista; // retornar a lista de cliente
         }
         public void BuscarId(int id) // buscar id
-        {
-
-        }
+        {}
     }
 }

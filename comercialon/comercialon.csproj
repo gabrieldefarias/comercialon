@@ -49,6 +49,7 @@
     <Compile Include="classes\Banco.cs" />
     <Compile Include="classes\Caixa.cs" />
     <Compile Include="classes\Cliente.cs" />
+    <Compile Include="classes\Endereco.cs" />
     <Compile Include="classes\ItemPedido.cs" />
     <Compile Include="classes\Pagamento.cs" />
     <Compile Include="classes\Pedido.cs" />
