@@ -15,9 +15,10 @@ namespace comercialon.classes
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        //========================================================================================
 
-        public Endereco()
-        {}
+        public Endereco() // gerando os construtores
+        { }
 
         public Endereco(string logradouro, string numero, string complemento, string cep, string bairro, string cidade, string estado = null)
         {
@@ -27,7 +28,7 @@ namespace comercialon.classes
             Cep = cep;
             Bairro = bairro;
             Cidade = cidade;
-            Estado = estado;
+            Estado = estado; // não obrigatorio por causa do "estado = null"
         }
     }
 }

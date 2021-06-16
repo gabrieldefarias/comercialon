@@ -6,7 +6,53 @@ using System.Threading.Tasks;
 
 namespace comercialon.classes
 {
-    class Produto
-    {
+    public class Produto
+    { // declarando as propriedades
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public double Preco { get; set; }
+        public double Desconto { get; set; }
+        public bool Descontinuado { get; set; }
+        //========================================================================================
+
+        public Produto() // gerando os construtores
+        { }
+
+        public Produto(int id, string descricao, double preco, double desconto, bool descontinuado)
+        {
+            Id = id;
+            Descricao = descricao;
+            Preco = preco;
+            Desconto = desconto;
+            Descontinuado = descontinuado;
+        }
+
+        public Produto(string descricao, double preco, double desconto, bool descontinuado)
+        {
+            Descricao = descricao;
+            Preco = preco;
+            Desconto = desconto;
+            Descontinuado = descontinuado;
+        }
+        //========================================================================================
+
+        public int Inserir(int id) // metodos de classe
+        {
+            return id;
+        }
+
+        public List<Produto> ListarTodos()
+        {
+            List<Produto> lista = new List<Produto>();
+            return lista;
+        }
+
+        public bool Alterar(int id)
+        {
+            return true;
+        }
+
+        public void BuscarId(int id) // buscar id
+        { }
     }
 }
