@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace comercialon.classes
 {
-    public class Usuario
-    { // declarando as propriedades
+    public class Usuario // classe publica // declarando as propriedades
+    {
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
         public string Nivel { get; set; }
         public string Situacao { get; set; }
-        //========================================================================================
+        //======================================================================================== // gerando os construtores
 
-        public Usuario() // gerando os construtores
-        { }
+        public Usuario()
+        {}
 
         public Usuario(int id, string nome, string email, string senha, string nivel, string situacao)
         {
@@ -37,9 +37,9 @@ namespace comercialon.classes
             Nivel = nivel;
             Situacao = situacao;
         }
-        //========================================================================================
+        //======================================================================================== // metodos de classe
 
-        public int Inserir(int id) // metodos de classe
+        public int Inserir(int id)
         {
             return id;
         }
@@ -55,7 +55,7 @@ namespace comercialon.classes
             return true;
         }
 
-        public void BuscarId(int id) // buscar id
+        public void BuscarId(int id)
         {}
     }
 }

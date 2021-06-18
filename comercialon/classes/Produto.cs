@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace comercialon.classes
 {
-    public class Produto
-    { // declarando as propriedades
+    public class Produto // classe publica // declarando as propriedades
+    {
         public int Id { get; set; }
         public string Descricao { get; set; }
         public double Preco { get; set; }
         public double Desconto { get; set; }
         public bool Descontinuado { get; set; }
-        //========================================================================================
+        //======================================================================================== // gerando os construtores
 
-        public Produto() // gerando os construtores
-        { }
+        public Produto()
+        {}
 
         public Produto(int id, string descricao, double preco, double desconto, bool descontinuado)
         {
@@ -34,9 +34,9 @@ namespace comercialon.classes
             Desconto = desconto;
             Descontinuado = descontinuado;
         }
-        //========================================================================================
+        //======================================================================================== // metodos de classe
 
-        public int Inserir(int id) // metodos de classe
+        public int Inserir(int id)
         {
             return id;
         }
@@ -52,7 +52,7 @@ namespace comercialon.classes
             return true;
         }
 
-        public void BuscarId(int id) // buscar id
+        public void BuscarId(int id)
         { }
     }
 }
